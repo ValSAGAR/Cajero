@@ -60,6 +60,13 @@ input{
     border-style: solid;
     margin-bottom: 20px;
 }
+
+input :focus{
+    border-radius: 0%;
+    border-color: rgba(6, 69, 187, 0.699);
+    border-style: solid;
+}
+
 button{
     font-family: monospace;
     color: aliceblue;
@@ -72,4 +79,10 @@ button{
 button:hover{
     color: aliceblue;
     background-color: rgba(4, 4, 197, 0.493);
+}
+
+p{
+    margin-bottom: 10px;
+    font-size: smaller;
+    color: brown;
 }

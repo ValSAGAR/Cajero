@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Cuentas.css">
+    <title>Cuenta</title>
+</head>
+<body>
+    <header>
+        <div id="Banmichi">
+            <img src="Estilos/Recursos/Michicoin.png" alt="Banmichi" id="logo">
+            <a href="cajero.html"><h1>Banmichi</h1></a>  
+        </div>
+        <h1 id="nombre"></h1>
+    </header>
+    <main>
+        <div id="mainbox">
+           <nav>
+                <ul>
+                    <li><button id="cnssaldo" onclick="consultaSaldo()">Consuta tu saldo</button></li>
+                    <li><button id="dep" onclick="deposita()">Deposita</button></li>
+                    <li><button id="ret" onclick="retira()">Retiro</button></li>
+                </ul>
+            </nav>
+            <article class="operacion" id="consulta">
+                <h2>Tu saldo actual es de:</h2>
+                <p id="saldoActual"></p>
+            </article>
+            <div class="operacion" id="depositar">
+                <h2><label for="ingreso">Ingresa la cantidad a depositar</label></h2>
+                 <br>
+                    <input type="number" name="ingreso" id="ingreso"
+                    placeholder="0">
+                    <br>
+                <button id="ingreso" onclick="return ingreso()"><b>Depositar</b></button>
+            </div>
+            <div class="operacion" id="retirar">
+                <h2><label for="retiro">Ingresa la cantidad a retirar</label></h2>
+                 <br>
+                    <input type="number" name="inputegreso" id="retiro"
+                    placeholder="$0.00">
+                    <br>
+                <button id="egreso" onclick="egreso()"> <b>Retirar</b></button>
+            </div> 
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="Cuenta.js"></script>
+</body>
+</html>

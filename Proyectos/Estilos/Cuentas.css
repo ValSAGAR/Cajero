@@ -2,7 +2,27 @@
     padding: 0%;
     margin: 0%;
     border: 0%;
+    text-decoration: none;
+    list-style: none;
 }
+
+body{
+    background-color: rgb(35, 140, 226);
+}
+
+header{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    background-color: aliceblue;
+    box-shadow: 0px 3px 5px 0px rgb(112, 112, 241);
+}
+
+header h1{
+    font-family: 'Courier New';
+    justify-self: center;
+    align-self: center;
+}
+
 
 #Banmichi{
     display: flex;
@@ -15,7 +35,131 @@
     margin: 10px;
 }
 
-header h1{
+#Banmichi h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
+}
+
+#Banmichi a:visited{
+    color: black;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#mainbox{
+    background-color: aliceblue;
+    width: 60%;
+    height: 30%;
+    border-radius: 20px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:auto ;
+    grid-template-areas: "header header header header"". main main main .";
+}
+
+nav ul{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 20px 20px 0px 0px;
+}
+
+nav ul{
+    background-color: darkblue;
+    height:40px;
+    border: 0px;
+    border-style: solid;
+    border-color: darkblue ;
+    border-top: 20px;
+}
+
+nav ul li button{
+    margin: 15px;
+    padding: 5px; 
+    background-color: transparent;
+    border: 0px;
+    font-family: Courier, monospace;
+    font-size: 20px;
+    text-shadow: 0px 1px 2px rgb(255, 255, 255);
+    color: aliceblue;
+}
+
+nav ul li button:hover{
+    box-shadow: 0px 3px 0px 0px rgb(144, 144, 250);
+}
+
+nav ul li button:active{
+    box-shadow: 0px 3px 0px 0px rgb(206, 206, 255);
+}
+
+.operacion{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#consulta{
+    display: none;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#consulta p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+label{
+    font-size: 20px;
+}
+
+input{
+    font-size: 35px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(160, 169, 206, 0.562);
+    border-width: 1px;
+    text-align: right;
+    font-family: Courier, monospace;
+}
+
+.operacion button{
+    font-size: 20px;
+    font-family: Courier, monospace;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgb(57, 166, 255);
+    margin-top: 20px;
+}
+
+.operacion button:hover{
+    background-color:rgb(168, 213, 250);
+}
+
+.operacion button:active{
+    background-color: rgb(111, 187, 250);
+}
+
+#retirar{
+    display:none;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#depositar{
+    display: none;
+    margin-top: 50px;
+    text-align: center;
 }
